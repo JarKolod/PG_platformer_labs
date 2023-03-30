@@ -26,6 +26,9 @@ public class Player : MonoBehaviour
     public Action<int,Collider2D> OnHit;
     public Action OnDeath;
 
+    [SerializeField] private Canvas gameOverCanvas;
+    [SerializeField] private Canvas HUD;
+    [SerializeField] private LayerMask enemyLayer;
     [SerializeField] private int maxHP = 100;
     [SerializeField] private Slider healthBarSlider;
     [Space]
@@ -156,14 +159,13 @@ public class Player : MonoBehaviour
     {
         Vector2 throwBack = new Vector2(transform.position.x - other.transform.position.x, transform.position.y - other.transform.position.y).normalized;
 
-        rb.velocity = throwBack * 10f;
+        rb.velocity = throwBack * 10f * Vector2.right + Vector2.up * 1f;
         TakeDamge(damage);
         RemovePoints(5);
     }
 
     private void TakeDamge(int damage)
     {
-        print("player hit");
         currentHp -= damage;
         healthBarSlider.value = currentHp;
         if (currentHp <= 0)
@@ -174,7 +176,19 @@ public class Player : MonoBehaviour
 
     private void HandlePlayersDeath()
     {
-        print("Player is dead");
+        gameOverCanvas.gameObject.SetActive(true);
+        HUD.gameObject.SetActive(false);
+
+        Time.timeScale = 0f;
+    }
+
+    public void OnAttack()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector3.right, 2f, enemyLayer);
+        if(hit)
+        {
+            hit.collider.transform.GetComponent<Enemy>().OnHit(30);
+        }
     }
 
     private void OnDrawGizmos()
