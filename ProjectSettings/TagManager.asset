@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - MenuCanvas
+  - GameOverCanvas
+  - HUD
   layers:
   - Default
   - TransparentFX
@@ -35,7 +38,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Enemy
   - Player
   m_SortingLayers:
   - name: Default

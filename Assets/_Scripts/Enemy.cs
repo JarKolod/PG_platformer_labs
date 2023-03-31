@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
         hp = maxHP;
         hpSlider.minValue = 0f;
         hpSlider.maxValue = maxHP;
+        hpSlider.value = hp;
     }
 
     private void FixedUpdate()

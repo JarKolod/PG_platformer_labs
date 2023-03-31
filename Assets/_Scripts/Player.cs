@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Canvas HUD;
     [SerializeField] private LayerMask enemyLayer;
     [SerializeField] private int maxHP = 100;
+    [SerializeField] private int playersDamage = 30;
     [SerializeField] private Slider healthBarSlider;
     [Space]
     [SerializeField] private float speed = 5f;
@@ -187,7 +188,7 @@ public class Player : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector3.right, 2f, enemyLayer);
         if(hit)
         {
-            hit.collider.transform.GetComponent<Enemy>().OnHit(30);
+            hit.collider.transform.GetComponent<Enemy>().OnHit(playersDamage);
         }
     }
 
