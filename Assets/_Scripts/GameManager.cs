@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private static float timeLimit = 20f;
+    [SerializeField] private float timeLimit = 20f;
     [SerializeField] private Canvas gameOverCanvas;
     [SerializeField] private Canvas HUDCanvas;
     [SerializeField] private TMPro.TMP_Text timeCounter;

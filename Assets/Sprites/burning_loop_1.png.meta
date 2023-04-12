@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 291447b982b0e97469d38372033df605
+guid: 54e7e93e10fde1e4281c3d9857efabd6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,10 +44,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,34 +105,39 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MonedaD_0
+      name: burning_loop_1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -3, y: 3.5}
+        - {x: -3, y: -3.5}
+        - {x: 2, y: -3.5}
+        - {x: 3, y: -2.5}
+        - {x: 3, y: 3.5}
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6bf294ae8c78f44e8ee87a243468cf0
-      internalID: -238858560
+      spriteID: db9963248d511514c9335f333cbd2993
+      internalID: 1203492574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonedaD_1
+      name: burning_loop_1_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 24
         y: 0
-        width: 16
-        height: 16
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,41 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4967702303fe72645896b8de09ff6916
-      internalID: -733940675
+      spriteID: ed11e022960a0fc47b0318ff19b85c4c
+      internalID: -637510443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonedaD_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00f22faa2e4017346849e88c397b2ecf
-      internalID: 647436383
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MonedaD_3
+      name: burning_loop_1_2
       rect:
         serializedVersion: 2
         x: 48
         y: 0
-        width: 16
-        height: 16
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 367ac00174076ea47a4535974e8327cb
-      internalID: 249547871
+      spriteID: 7bb442bd8e412294798a2d48b9418894
+      internalID: -726011381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonedaD_4
+      name: burning_loop_1_3
       rect:
         serializedVersion: 2
-        x: 64
+        x: 72
         y: 0
-        width: 16
-        height: 16
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +187,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fde02c389b5e9ae458f2ce2e30ae1d6c
-      internalID: 1050382648
+      spriteID: 9ec4aa49052e97949897887a75de34ce
+      internalID: -806501377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning_loop_1_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062763b12a7a0ac43a05a2bcaf387cde
+      internalID: 461349599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning_loop_1_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c4874df6e087844b03c042b6b79bd0
+      internalID: -1208093653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning_loop_1_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98db740b462d26a469032a451db02307
+      internalID: -94595042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: burning_loop_1_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca06ad91e139cc46877641fce6d6679
+      internalID: -1691978502
       vertices: []
       indices: 
       edges: []
@@ -220,11 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MonedaD_1: -733940675
-      MonedaD_0: -238858560
-      MonedaD_3: 249547871
-      MonedaD_2: 647436383
-      MonedaD_4: 1050382648
+      burning_loop_1_5: -1208093653
+      burning_loop_1_7: -1691978502
+      burning_loop_1_4: 461349599
+      burning_loop_1_1: -637510443
+      burning_loop_1_6: -94595042
+      burning_loop_1_0: 1203492574
+      burning_loop_1_3: -806501377
+      burning_loop_1_2: -726011381
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
